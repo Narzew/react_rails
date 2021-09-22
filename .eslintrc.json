@@ -1,0 +1,46 @@
+{
+    "plugins": [
+    "prettier",
+    "@typescript-eslint"
+],
+    "extends": [
+    "react-app",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+],
+    "env": {
+    "browser": true,
+        "jest": true
+},
+    "rules": {
+    "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "react/no-unescaped-entities": 0,
+        "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/dot-notation": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "no-plusplus": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "no-param-reassign": 0,
+        "react/prop-types": 0,
+        "import/prefer-default-export": 0,
+        "react/jsx-curly-newline": 0,
+        "no-restricted-syntax": 0,
+        "react/jsx-wrap-multilines": 0,
+        "react/require-default-props": 0,
+        "react/jsx-props-no-spreading": 0
+},
+    "settings": {
+    "react": {
+        "pragma": "React",
+            "version": "detect"
+    }
+},
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+    "project": "./tsconfig.json"
+}
+}

@@ -1,14 +1,23 @@
 # frozen_string_literal: true
 
 class LessonController < ApplicationController
-  before_action :set_lesson, only: [:show]
+  before_action :set_lesson, only: [:show, :json_show]
 
   def index
     @lessons = Lesson.all
   end
 
+  def json_index
+    @lessons = Lesson.all
+    render json: @lessons
+  end
+
   def show
     @lesson
+  end
+
+  def json_show
+    render json: @lesson
   end
 
   private

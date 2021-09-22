@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class LessonController < ApplicationController
-  before_action :set_lesson, only: [:show, :json_show]
+  before_action :set_lesson, only: %i[show json_show]
 
   def index
     @lessons = Lesson.all

@@ -3,10 +3,9 @@
 
 <ul class="lesson-list">
 <% @lessons.each do |lesson| %>
-<li><%= lesson.name %></li>
+<li><%= lesson.name %> <%= link_to 'Show', lesson_path(lesson) %></li>
 <% end %>
 </ul>
 
 
 <%= react_component("HelloWorld") %>
-<%= javascript_pack_tag 'hello_react' %>

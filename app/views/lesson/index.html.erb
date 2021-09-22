@@ -1,4 +1,12 @@
 <h1>Lesson#index</h1>
 <p>Find me in app/views/lesson/index.html.erb</p>
+
+<ul class="lesson-list">
+<% @lessons.each do |lesson| %>
+<li><%= lesson.name %></li>
+<% end %>
+</ul>
+
+
 <%= react_component("HelloWorld") %>
 <%= javascript_pack_tag 'hello_react' %>

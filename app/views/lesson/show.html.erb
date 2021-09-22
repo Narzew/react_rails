@@ -1,7 +1,1 @@
-<ul>
-  <li>Name: <%= @lesson.name %></li>
-  <li>Difficulty: <%= @lesson.difficulty %></li>
-  <li>Content: <%= @lesson.content %></li>
-</ul>
-
-<%= link_to 'Back', lesson_index_path %>
+<%= react_component('DetailedView', { lesson: @lesson, path: lesson_index_path }) %>

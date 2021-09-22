@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'lesson/index'
   get 'lesson/show/:id', to: 'lesson#show', as: 'lesson'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -7,9 +9,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-    Lesson.create(
-      name: Faker::Science.science,
-      difficulty: rand(1..5),
-      content: Faker::TvShows::Friends.quote
-    )
+  Lesson.create(
+    name: Faker::Science.science,
+    difficulty: rand(1..5),
+    content: Faker::TvShows::Friends.quote
+  )
 end

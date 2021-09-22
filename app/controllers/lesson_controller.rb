@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class LessonController < ApplicationController
   before_action :set_lesson, only: [:show]
 

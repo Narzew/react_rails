@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+#   get '*path', to: 'lesson/index', constraints: ->(request){ request.format.html? }
   get 'lesson/index'
   get 'lesson/show/:id', to: 'lesson#show', as: 'lesson'
   get 'json/lesson/index', to: 'lesson#json_index'

@@ -2,5 +2,9 @@
 <p>Find me in app/views/lesson/index.html.erb</p>
 
 <% @lessons.each do |lesson| %>
-    <%= react_component('ListItem', { lesson: lesson.name, path: lesson_path(lesson)}) %>
+    <%= react_component('ListItem', { lesson: lesson.name, path: lesson_path(lesson) }) %>
 <% end %>
+
+<%= react_component('TinyLineChart') %>
+<%= react_component('PieChart') %>
+<%= react_component('LineChart') %>
